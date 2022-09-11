@@ -7,6 +7,6 @@ fork from <https://github.com/devshred/mkgmap-docker>
 
 TODO:
 
-- how to create files for Basecamp?
-- how to add custom TYP file (opentopomap)
+- how to create files for Basecamp? --> --gmapi option for mkgmap
+- how to add custom TYP file (opentopomap) -> include in the command line as last argument
 - how to add height infomation (shape files)
