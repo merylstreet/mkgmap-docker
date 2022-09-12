@@ -10,3 +10,7 @@ TODO:
 - how to create files for Basecamp? --> --gmapi option for mkgmap
 - how to add custom TYP file (opentopomap) -> include in the command line as last argument
 - how to add height infomation (shape files)
+- TYP file? <https://www.pinns.co.uk/osm/typwiz7.html>
+
+TIPS:
+/Users/ludw/Library/Caches/com.garmin.BaseCamp -> delete TileCache
