@@ -13,7 +13,7 @@ do
 		final_file=${i}${j}.zip
 		final_url=${URL}${final_file}
 		if ! [ -f $final_file ]; then
-			curl -I -s ${final_url} | grep -q "Content-Type: application/zip" && echo curl -LO ${final_url}
+			curl -I -s ${final_url} | grep -q "Content-Type: application/zip" && curl -LO ${final_url}
 		fi
 	done
 done
