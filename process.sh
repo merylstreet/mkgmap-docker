@@ -26,7 +26,7 @@ cd /work
 
 java -Xmx${MAX_HEAP_SIZE} -jar /splitter/splitter.jar --output-dir=/work /data/*pbf
 
-[ $? -eq 0] && java -Xmx${MAX_HEAP_SIZE} -jar /mkgmap/mkgmap.jar --mapname=63240901 \
+[ $? -eq 0 ] && java -Xmx${MAX_HEAP_SIZE} -jar /mkgmap/mkgmap.jar --mapname=63240901 \
     --name-tag-list=name:en,int_name,name:fr,name \
     --code-page=1252 \
     --description="${DESCRIPTION} ${PRODUCT_VERSION}" \
@@ -39,7 +39,7 @@ java -Xmx${MAX_HEAP_SIZE} -jar /splitter/splitter.jar --output-dir=/work /data/*
     --add-pois-to-areas \
     --precomp-sea=/sea-latest.zip \
     --gmapi \
-    --dem=/data/dem/dem1/, /data/dem/dem3/ \
+    --dem=/data/dem/dem1/,/data/dem/dem3/ \
     --dem-dists=3312,13248,26512,53024 \
     --style-file=/garmin/style/${STYLE} \
     *.osm.pbf \
@@ -47,7 +47,7 @@ java -Xmx${MAX_HEAP_SIZE} -jar /splitter/splitter.jar --output-dir=/work /data/*
 
 if [ $? -eq 0 ]; then
     mv gmapsupp.img /data/${FAMILY_NAME}.img
-    mv -r ${FAMILY_NAME}.gmap /data/
+    mv ${FAMILY_NAME}.gmap /data/
 fi
 
 cd /
