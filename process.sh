@@ -39,7 +39,7 @@ java -Xmx${MAX_HEAP_SIZE} -jar /splitter/splitter.jar --output-dir=/work /data/*
     --add-pois-to-areas \
     --precomp-sea=/sea-latest.zip \
     --gmapi \
-    --dem=/data/dem/dem1/,/data/dem/dem3/ \
+    --dem=/data/garmin/dem/dem1/,/data/garmin/dem/dem3/ \
     --dem-dists=3312,13248,26512,53024 \
     --style-file=/garmin/style/${STYLE} \
     *.osm.pbf \
