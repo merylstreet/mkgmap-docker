@@ -5,6 +5,11 @@ set -x
 #https://www.mkgmap.org.uk/pipermail/mkgmap-dev/2020q2/031087.html
 
 
+GARMIN_DIR=/data
+DEM_FILES=${GARMIN_DIR}/dem/dem1,${GARMIN_DIR}/dem/dem3
+SEA_FILES=${GARMIN_DIR}/sea/
+
+
 # -z tests if string length is zero
 [ -z "$MAX_HEAP_SIZE" ] && MAX_HEAP_SIZE="10G"
 [ -z "$DESCRIPTION" ] && DESCRIPTION="ludwiczek maps"

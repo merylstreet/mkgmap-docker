@@ -14,8 +14,7 @@ RUN apt-get update && apt-get install -y wget unzip \
   && unzip splitter-$SPLITTER_VERSION.zip \
   && mv splitter-$SPLITTER_VERSION splitter \
   && wget https://github.com/openstreetmap/osmosis/releases/download/$OSMOSIS_VERSION/osmosis-$OSMOSIS_VERSION.zip \
-  && (mkdir -p osmosis && cd osmosis && unzip ../osmosis-0.48.3.zip) \
-  && wget http://osm.thkukuk.de/data/sea-latest.zip
+  && (mkdir -p osmosis && cd osmosis && unzip ../osmosis-0.48.3.zip)
 
 
 #FROM openjdk:11-jre-slim
@@ -23,11 +22,10 @@ FROM amazoncorretto:18
 COPY --from=builder /build/mkgmap /mkgmap
 COPY --from=builder /build/splitter /splitter
 COPY --from=builder /build/osmosis /osmosis
-COPY --from=builder /build/sea-latest.zip /
-COPY garmin/ /garmin
+
 RUN echo 'alias ll="ls -lah --color"' >> /root/.bashrc
 
-ADD process.sh /process.sh
+ADD garmin.sh /garmin.sh
 VOLUME /data
 
-CMD /process.sh
+CMD /garmin.sh
