@@ -5,9 +5,10 @@ set -x
 #https://www.mkgmap.org.uk/pipermail/mkgmap-dev/2020q2/031087.html
 
 
-GARMIN_DIR=/data
+#docker run -v $(pwd):/data
+GARMIN_DIR=/data/garmin
 DEM_FILES=${GARMIN_DIR}/dem/dem1,${GARMIN_DIR}/dem/dem3
-SEA_FILES=${GARMIN_DIR}/sea/
+SEA_FILES=${GARMIN_DIR}/sea
 
 
 # -z tests if string length is zero
@@ -20,8 +21,9 @@ SEA_FILES=${GARMIN_DIR}/sea/
 [ -z "$STYLE" ] && STYLE=opentopomap
 
 # we can include TYP as .txt file, it will be compiled by mkgmap during execution
-TYP_DIR=/garmin/typ
+TYP_DIR=${GARMIN_DIR}/typ
 TYP_FILE=${STYLE}.txt
+STYLE_DIR=${GARMIN_DIR}/style
 
 mkdir -p /work
 
@@ -42,11 +44,11 @@ java -Xmx${MAX_HEAP_SIZE} -jar /splitter/splitter.jar --output-dir=/work /data/*
     --route \
     --remove-short-arcs \
     --add-pois-to-areas \
-    --precomp-sea=/sea-latest.zip \
+    --precomp-sea=${SEA_FILES}/sea-latest.zip \
     --gmapi \
-    --dem=/data/garmin/dem/dem1/,/data/garmin/dem/dem3/ \
+    --dem="${DEM_FILES}" \
     --dem-dists=3312,13248,26512,53024 \
-    --style-file=/garmin/style/${STYLE} \
+    --style-file=${STYLE_DIR}/${STYLE} \
     *.osm.pbf \
     ${TYP_DIR}/${TYP_FILE}
 
