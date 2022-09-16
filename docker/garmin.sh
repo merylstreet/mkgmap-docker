@@ -7,7 +7,7 @@ set -x
 
 #docker run -v $(pwd):/data
 GARMIN_DIR=/data/garmin
-DEM_FILES=${GARMIN_DIR}/dem/dem1,${GARMIN_DIR}/dem/dem3
+DEM_FILES=${GARMIN_DIR}/dem/dem1/,${GARMIN_DIR}/dem/dem3/
 SEA_FILES=${GARMIN_DIR}/sea
 
 
@@ -16,6 +16,7 @@ SEA_FILES=${GARMIN_DIR}/sea
 [ -z "$DESCRIPTION" ] && DESCRIPTION="ludwiczek maps"
 [ -z "$FAMILY_NAME" ] && FAMILY_NAME="ludwiczek_maps"
 [ -z "$PRODUCT_VERSION" ] && PRODUCT_VERSION=2209
+[ -z "$MAP_NAME" ] && MAP_NAME=63240901
 
 # contours or opentopomap
 [ -z "$STYLE" ] && STYLE=opentopomap
@@ -29,11 +30,12 @@ mkdir -p /work
 
 #JAVACMD_OPTIONS=-Xmx10G /osmosis/bin/osmosis -v  --read-osm /data/moroccoSRTM.osm --read-pbf /data/morocco-latest.osm.pbf --merge --sort --write-pbf /data/merged.pbf 
 
+
 cd /work
 
 java -Xmx${MAX_HEAP_SIZE} -jar /splitter/splitter.jar --output-dir=/work /data/*pbf
 
-[ $? -eq 0 ] && java -Xmx${MAX_HEAP_SIZE} -jar /mkgmap/mkgmap.jar --mapname=63240901 \
+[ $? -eq 0 ] && java -Xmx${MAX_HEAP_SIZE} -jar /mkgmap/mkgmap.jar --mapname=${MAP_NAME} \
     --name-tag-list=name:en,int_name,name:fr,name \
     --code-page=1252 \
     --description="${DESCRIPTION} ${PRODUCT_VERSION}" \
