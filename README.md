@@ -1,9 +1,8 @@
-fork from <https://github.com/devshred/mkgmap-docker>
 
 - build docker image by running ```./build.sh```
-- read the ```process.sh``` - it is the main workhorse
+- read the ```garmin.sh``` - it is the main workhorse
 - download OSM PBF data from <https://download.geofabrik.de/index.html>. You can download more than one *.pdf file - it will be complied into one output file
-- run ```docker run --rm -it -v $(pwd):/data -e DESCRIPTION="map by ludw" ludw/mkgmap```
+- *edit* and run `create_map.sh`
 
 TODO:
 
@@ -13,4 +12,10 @@ TODO:
 - TYP file? <https://www.pinns.co.uk/osm/typwiz7.html>
 
 TIPS:
-/Users/ludw/Library/Caches/com.garmin.BaseCamp -> delete TileCache
+
+- /Users/ludw/Library/Caches/com.garmin.BaseCamp -> delete TileCache
+
+WEB RESOURCES:
+
+- [gpx studio](https://gpx.studio/)
+- <https://www.cferrero.net/maps/guide_to_mkgmap_style_files.html>
