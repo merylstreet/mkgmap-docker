@@ -18,12 +18,13 @@ SEA_FILES=${GARMIN_DIR}/sea
 [ -z "$PRODUCT_VERSION" ] && PRODUCT_VERSION=2209
 [ -z "$MAP_NAME" ] && MAP_NAME=63240901
 
-# contours or opentopomap
+#style & typ
 [ -z "$STYLE" ] && STYLE=opentopomap
+[ -z "$TYP" ] && TYP=opentopomap
 
 # we can include TYP as .txt file, it will be compiled by mkgmap during execution
 TYP_DIR=${GARMIN_DIR}/typ
-TYP_FILE=${STYLE}.txt
+TYP_FILE=${TYP}.txt
 STYLE_DIR=${GARMIN_DIR}/style
 
 mkdir -p /work

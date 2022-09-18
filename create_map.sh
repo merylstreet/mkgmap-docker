@@ -7,4 +7,5 @@ docker run -it --rm -v $(pwd):/data \
     -e PRODUCT_VERSION="2209" \
     -e MAP_NAME=63240903 \
     -e STYLE=mkgmap \
+    -e TYP=mkgmap \
     ludw/mkgmap
