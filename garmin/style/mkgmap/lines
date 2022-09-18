@@ -229,7 +229,9 @@ highway=rest_area | highway=services {set tmp:stopMopUp=yes}
 
 # Showing the coastline adds almost nothing visuals of the map, so it's disabled:
 #natural=coastline [0x15 resolution 12]
-power=line [0x29 resolution 21]
+
+#LUDW don't need
+#power=line [0x29 resolution 21]
 
 railway=platform & tmp:stopMopUp!=yes [0x16 road_class=0 road_speed=0 resolution 23]
 # Railway lines, note that many devices display type 0x14 only at resolution 24
