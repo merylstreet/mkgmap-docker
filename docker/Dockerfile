@@ -1,8 +1,8 @@
 # https://docs.docker.com/develop/develop-images/multistage-build/
 FROM ubuntu AS builder
 
-ARG MKGMAP_VERSION=r4905
-ARG SPLITTER_VERSION=r652
+ARG MKGMAP_VERSION=r4907
+ARG SPLITTER_VERSION=r653
 ARG OSMOSIS_VERSION=0.48.3
 
 WORKDIR /build
