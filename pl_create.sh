@@ -8,6 +8,7 @@ days_old=14 #how old can be file before we will re-download it
 #echo "file_old    $file_old"
 #echo "difference  $difference"
 
+DOWNLOAD=
 if [[ -e $file_name ]]; then
 	#jezeli plik istniej to sprawdzamy jak jest stary
 	let "seconds_old=$days_old * 24 * 3600" #days_old but in SECONDS
@@ -27,16 +28,17 @@ else
 	DOWNLOAD=1
 fi
 
-#rm -rf ./*pbf
-#curl -LO https://download.geofabrik.de/europe/poland-latest.osm.pbf
-#
-#
-#docker run -it --rm -v $(pwd):/data \
-#    -e MAX_HEAP_SIZE=18G \
-#    -e FAMILY_NAME=PL \
-#    -e DESCRIPTION="PL by Ludw" \
-#    -e PRODUCT_VERSION="2209" \
-#    -e ID=7709 \
-#    -e STYLE=mkgmap \
-#    -e TYP=opentopomap \
-#    ludw/mkgmap
+if [[ ! -z $DOWNLOAD ]]; then
+	[[ -e ${file_name} ]] && rm -rf ./*pbf
+	curl -LO https://download.geofabrik.de/europe/poland-latest.osm.pbf
+fi
+
+docker run -it --rm -v $(pwd):/data \
+    -e MAX_HEAP_SIZE=18G \
+    -e FAMILY_NAME=PL \
+    -e DESCRIPTION="PL by Ludw" \
+    -e PRODUCT_VERSION="2303" \
+    -e ID=7709 \
+    -e STYLE=mkgmap \
+    -e TYP=opentopomap \
+    ludw/mkgmap
