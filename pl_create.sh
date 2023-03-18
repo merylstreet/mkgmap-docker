@@ -1,12 +1,11 @@
 #!/bin/bash
 
+#script will create Poland map
+#directory: PL.gmap -> move to you Basecamp map folder (on mac: Garmin Mac Manager, copy to that folder)
+#PL.img -> move to your device
+
 file_name=poland-latest.osm.pbf
 days_old=14 #how old can be file before we will re-download it
-
-#echo "seconds_old $seconds_old"
-#echo "now         $now"
-#echo "file_old    $file_old"
-#echo "difference  $difference"
 
 DOWNLOAD=
 if [[ -e $file_name ]]; then
