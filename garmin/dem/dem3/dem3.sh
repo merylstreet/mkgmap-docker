@@ -2,6 +2,9 @@
 set +x
 
 #http://viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm
+#
+#niestety te pliki trzeba wszystkie wypakowac i przeniesc do jedengo katalogu
+#inaczej nie sa brane pod uwage przez mkgmap
 
 URL=http://viewfinderpanoramas.org/dem3/
 
