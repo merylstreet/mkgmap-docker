@@ -10,7 +10,7 @@ for i in G H I J K L M N O P Q R S T U SA SB SC SD SE SF SG SH SI SJ SK SL SM SN
 do
 	for j in `seq -w 1 60`
 	do
-		final_file=${i}${j}.zip
+		final_file=${i}${j}.zip && echo $final_file
 		final_url=${URL}${final_file}
 		if ! [ -f $final_file ]; then
 			curl -I -s ${final_url} | grep -q "Content-Type: application/zip" && curl -LO ${final_url}
