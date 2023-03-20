@@ -4,7 +4,7 @@
 #directory: PL.gmap -> move to you Basecamp map folder (on mac: Garmin Mac Manager, copy to that folder)
 #PL.img -> move to your device
 
-file_name=poland-latest.osm.pbf
+file_name=canary-islands-latest.osm.pbf
 days_old=14 #how old can be file before we will re-download it
 
 DOWNLOAD=
@@ -29,15 +29,15 @@ fi
 
 if [[ ! -z $DOWNLOAD ]]; then
 	[[ -e ${file_name} ]] && rm -rf ./*pbf
-	curl -LO https://download.geofabrik.de/europe/poland-latest.osm.pbf
+	curl -LO https://download.geofabrik.de/africa/$file_name
 fi
 
 docker run -it --rm -v $(pwd):/data \
     -e MAX_HEAP_SIZE=18G \
-    -e FAMILY_NAME=PL \
-    -e DESCRIPTION="PL by Ludw" \
+    -e FAMILY_NAME=Canary \
+    -e DESCRIPTION="Canary by Ludw" \
     -e PRODUCT_VERSION="2303" \
-    -e MAP_NAME=77090001 \
+    -e MAP_NAME=77100001 \
     -e STYLE=mkgmap \
     -e TYP=opentopomap \
     ludw/mkgmap
