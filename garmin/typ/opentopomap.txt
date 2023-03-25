@@ -1,7 +1,7 @@
 ; opentopomap.typ
 ; Longueur: 13014 octets
-; Fichier TYP compilé     19/11/2018     22:08:32
-; Décompilé le 9/18/2022 à 4:31:01 PM
+; Fichier TYP compilï¿½     19/11/2018     22:08:32
+; Dï¿½compilï¿½ le 9/18/2022 ï¿½ 4:31:01 PM
 
 [_id]
 ProductCode=1
@@ -48,7 +48,6 @@ Type=0x004,8
 [_polygon]
 Type=0x04
 ;GRMN_TYPE: Large Manmade Areas/MILITARY_BASE/Military base area/Non NT
-String1=0x02,Sperrgebiet
 String2=0x04,exclusion zone
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -96,8 +95,6 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x10
 ;GRMN_TYPE: //
-String1=0x02,Bebauung
-String2=0x02,built-up area
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -110,18 +107,16 @@ Xpm="0 0 1 0"
 [_polygon]
 Type=0x13
 ;GRMN_TYPE: Large Manmade Areas/GENERIC_MANMADE/Other or generic manmade area, such as a building/Non NT
-String1=0x02,Gebäude
 String2=0x04,building
 ExtendedLabels=N
 Xpm="0 0 1 0"
-"1 c #404040"
+"1 c #A0A0A0"
 [end]
 
 
 [_polygon]
 Type=0x17
 ;GRMN_TYPE: Park Areas/URBAN_PARK/Small urban park, typically only a few square blocks in size/Non NT
-String1=0x02,Wiese
 String2=0x04,meadow
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -166,7 +161,6 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x19
 ;GRMN_TYPE: Large Manmade Areas/SPORTS_COMPLEX/Sports arena or stadium/Non NT
-String1=0x02,Sportplatz
 String2=0x04,sports field
 ExtendedLabels=N
 Xpm="0 0 1 0"
@@ -177,7 +171,6 @@ Xpm="0 0 1 0"
 [_polygon]
 Type=0x1a
 ;GRMN_TYPE: Large Manmade Areas/CEMETARY/Cemetary/Non NT
-String1=0x02,Friedhof
 String2=0x04,cemetery
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -222,7 +215,6 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x32
 ;GRMN_TYPE: Water Areas/SEA/Sea/Non NT
-String1=0x02,Meer
 String2=0x04,sea
 ExtendedLabels=N
 Xpm="0 0 1 0"
@@ -233,7 +225,6 @@ Xpm="0 0 1 0"
 [_polygon]
 Type=0x38
 ;GRMN_TYPE: //
-String1=0x02,Nadelwald
 String2=0x04,conifer forest
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -281,7 +272,6 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x39
 ;GRMN_TYPE: //
-String1=0x02,Laubwald
 String2=0x04,broad-leaved forest
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -329,8 +319,6 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x3c
 ;GRMN_TYPE: Water Areas/LAKE_100MI/Lake less than 250 sq mi but greater or equal to 100 sq mi in area/Non NT
-String1=0x04,water
-String2=0x02,Gewässer
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=Day
@@ -345,7 +333,6 @@ Xpm="0 0 1 0"
 Type=0x3d
 ;GRMN_TYPE: Water Areas/LAKE_30MI, LARGE_LAKE/Large lake, typically between 30 and 500 sq mi in area/Non NT
 String1=0x04,water
-String2=0x02,Gewässer
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -358,7 +345,6 @@ Xpm="0 0 1 0"
 [_polygon]
 Type=0x46
 ;GRMN_TYPE: Water Areas/LARGE_RIVER/Major river, typically at least 700 ft in width/Non NT
-String1=0x02,Fluss
 String2=0x04,river
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -373,7 +359,6 @@ Xpm="0 0 1 0"
 [_polygon]
 Type=0x47
 ;GRMN_TYPE: Water Areas/RIVER_GT_700FT/Major river greater or equal to 700 ft in width/Non NT
-String1=0x02,Fluss
 String2=0x04,river
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -396,7 +381,6 @@ Xpm="0 0 1 0"
 [_polygon]
 Type=0x4e
 ;GRMN_TYPE: Surface Cover Areas/ORCHARD/Orchard or plantation area/Non NT
-String1=0x02,Wein
 String2=0x04,wine
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -441,7 +425,6 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x4f
 ;GRMN_TYPE: Surface Cover Areas/SCRUB/Scrub brush area/Non NT
-String1=0x02,Busch
 String2=0x04,scrubs
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -486,7 +469,6 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x50
 ;GRMN_TYPE: Surface Cover Areas/WOODS/Wooded or forested area/Non NT
-String1=0x02,Mischwald
 String2=0x04,mixed forest
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -534,7 +516,6 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x55
 ;GRMN_TYPE: //
-String1=0x02,Sand/Strand
 String2=0x04,sand/beach
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -588,7 +569,6 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #FDB548"
 "2 c #000000"
-String1=0x02,Autobahn
 String2=0x04,motorway
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -606,7 +586,6 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FDB548"
 "2 c #000000"
-String1=0x02,Schnellstraße
 String2=0x04,trunk
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -624,7 +603,6 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FDB548"
 "2 c #000000"
-String1=0x02,Bundesstraße
 String2=0x04,primary street
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -688,7 +666,6 @@ UseOrientation=N
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #000000"
-String1=0x02,Weg
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
@@ -783,7 +760,6 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #A0A0A0"
 "2 c #000000"
-String1=0x02,Fußgängerzone
 String2=0x04,pedestrian zone
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -802,7 +778,6 @@ Xpm="32 2 2  1"
 "!  !  !  !  !  !  !  !  !  !  ! "
 "!  !  !  !  !  !  !  !  !  !  ! "
 ;12345678901234567890123456789012
-String1=0x02,Treppe/Stufen
 String2=0x04,steps
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -822,7 +797,6 @@ Xpm="32 3 2  1"
 "########!!!!!!!!########!!!!!!!!"
 "################################"
 ;12345678901234567890123456789012
-String1=0x02,Gleis
 String2=0x04,rail
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -840,7 +814,6 @@ Xpm="32 1 2  1"
 "  c none"
 "!!!!    !!!!    !!!!    !!!!    "
 ;12345678901234567890123456789012
-String1=0x02,Fußweg
 String2=0x04,footway
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -856,7 +829,6 @@ UseOrientation=N
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #1D4DFF"
-String1=0x02,Bach
 String2=0x04,stream
 ExtendedLabels=N
 [end]
@@ -871,7 +843,6 @@ Xpm="32 1 2  1"
 "  c none"
 "!!!!!!!!        !!!!!!!!        "
 ;12345678901234567890123456789012
-String1=0x02,Fähre
 String2=0x04,ferry
 ExtendedLabels=N
 [end]
@@ -886,7 +857,6 @@ Xpm="32 1 2  1"
 "  c none"
 "!!!!!!!!!!!!!!        !!        "
 ;12345678901234567890123456789012
-String1=0x02,Grenze
 String2=0x04,border
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -904,7 +874,6 @@ Xpm="32 1 2  1"
 "  c none"
 "!!!!!!!!!!!!!!        !!        "
 ;12345678901234567890123456789012
-String1=0x02,Grenze
 String2=0x04,border
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -923,7 +892,6 @@ Xpm="32 2 2  1"
 "!!!!!!!!!!!!!!        !!        "
 "!!!!!!!!!!!!!!        !!        "
 ;12345678901234567890123456789012
-String1=0x02,Grenze
 String2=0x04,border
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -939,7 +907,6 @@ UseOrientation=N
 LineWidth=3
 Xpm="0 0 1 0"
 "1 c #1D4DFF"
-String1=0x02,Fluss
 String2=0x04,river
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -956,7 +923,6 @@ UseOrientation=N
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #A0A0A0"
-String1=0x02,Landebahn
 String2=0x04,runway
 ExtendedLabels=N
 [end]
@@ -975,7 +941,6 @@ Xpm="32 5 2  1"
 "                 !              "
 "                !               "
 ;12345678901234567890123456789012
-String1=0x02,Stromleitung
 String2=0x04,power line
 ExtendedLabels=N
 [end]
@@ -992,7 +957,6 @@ Xpm="32 3 2  1"
 "!      !        !      !        "
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x02,Bahntunnel
 String2=0x04,railway tunnel
 ExtendedLabels=N
 [end]
@@ -1005,7 +969,6 @@ UseOrientation=N
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #000000"
-String1=0x02,Gleis
 String2=0x04,rail
 ExtendedLabels=N
 [end]
@@ -1021,7 +984,6 @@ Xpm="32 2 2  1"
 "!!!!    !!!!    !!!!    !!!!    "
 "!!!!    !!!!    !!!!    !!!!    "
 ;12345678901234567890123456789012
-String1=0x02,Bahntunnel
 String2=0x04,railway tunnel
 ExtendedLabels=N
 [end]
@@ -1038,7 +1000,6 @@ Xpm="32 3 2  1"
 "  !!!     !!!     !!!     !!!   "
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x02,Hang
 String2=0x04,cliff
 ExtendedLabels=N
 [end]
@@ -1057,7 +1018,6 @@ Xpm="32 5 2  1"
 "       !                !       "
 "       !                !       "
 ;12345678901234567890123456789012
-String1=0x02,Zaun
 String2=0x04,fence
 ExtendedLabels=N
 [end]
@@ -1072,7 +1032,6 @@ Xpm="32 1 2  1"
 "  c none"
 "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! "
 ;12345678901234567890123456789012
-String1=0x02,Waldrand
 String2=0x04,edge of the forest
 ExtendedLabels=N
 [end]
@@ -1085,7 +1044,6 @@ ExtendedLabels=N
 Type=0x02a
 SubType=0x00
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT/General restaurant of unknown genre/Non NT
-String1=0x02,Restaurant
 String2=0x04,restaurant
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1127,7 +1085,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x01
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_AMERICAN/American cuisine/Non NT
-String1=0x02,Restaurant (amerikanisch)
 String2=0x04,restaurant (american)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1169,7 +1126,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x02
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_ASIAN/Asian cuisine/Non NT
-String1=0x02,Restaurant (asiatisch)
 String2=0x04,restaurant (asian)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1211,7 +1167,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x03
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_BARBECUE/Barbecue cuisine/Non NT
-String1=0x02,Restaurant (Grill)
 String2=0x04,restaurant (barbecue)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1253,7 +1208,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x04
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_CHINESE/Chinese cuisine/Non NT
-String1=0x02,Restaurant (chinesisch)
 String2=0x04,restaurant (chinese)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1295,7 +1249,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x05
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_DELI/Deli or sandwich shop/Non NT
-String1=0x02,Restaurant (indisch)
 String2=0x04,restaurant (indian)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1337,7 +1290,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x06
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_INTRNTNL/International cuisine/Non NT
-String1=0x02,Restaurant (international)
 String2=0x04,restaurant (international)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1379,7 +1331,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x07
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_FAST_FOOD/Fast food establishment, i.e. McDonalds/Non NT
-String1=0x02,Fast food
 String2=0x04,fast food
 ExtendedLabels=N
 DayXpm="16 15 10 1"   Colormode=16
@@ -1416,7 +1367,6 @@ DayXpm="16 15 10 1"   Colormode=16
 Type=0x02a
 SubType=0x08
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_ITALIAN/Italian cuisine/Non NT
-String1=0x02,Restaurant (italienisch)
 String2=0x04,restaurant (italian)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1458,7 +1408,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x09
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_MEXICAN/Mexican cuisine/Non NT
-String1=0x02,Restaurant (mexikanisch)
 String2=0x04,restaurant (mexican)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1500,7 +1449,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x0a
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_PIZZA/Pizzeria/Non NT
-String1=0x02,Pizzeria
 String2=0x04,restaurant (pizza)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1542,7 +1490,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x0b
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_SEAFOOD/Seafood restaurant/Non NT
-String1=0x02,Restaurant (Fisch)
 String2=0x04,restaurant (sea food)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1584,7 +1531,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x0c
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_STEAK/Grill and steak brew pub restaurant/Non NT
-String1=0x02,Steakhaus
 String2=0x04,restaurant (steaks)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1626,7 +1572,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x0d
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_DONUTS/Donut shop/Non NT
-String1=0x02,Bäckerei
 String2=0x04,bakery
 ExtendedLabels=N
 DayXpm="14 11 17 1"   Colormode=16
@@ -1666,7 +1611,6 @@ DayXpm="14 11 17 1"   Colormode=16
 Type=0x02a
 SubType=0x0e
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_CAFES/Cafe or coffee shop/Non NT
-String1=0x02,Café
 String2=0x04,cafe
 ExtendedLabels=N
 DayXpm="11 10 3 1"   Colormode=16
@@ -1691,7 +1635,6 @@ DayXpm="11 10 3 1"   Colormode=16
 Type=0x02a
 SubType=0x0f
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_FRENCH/French cuisine/Non NT
-String1=0x02,Restaurant (französisch)
 String2=0x04,restaurant (french)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1733,7 +1676,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x10
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_GERMAN/German cuisine/Non NT
-String1=0x02,Restaurant (deutsch)
 String2=0x04,restaurant (german)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1775,7 +1717,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x11
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_BRITISH/British cuisine/Non NT
-String1=0x02,Restaurant (britisch)
 String2=0x04,restaurant (british)
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1817,7 +1758,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x12
 ;GRMN_TYPE: //
-String1=0x02,Restaurant (Spezialitäten)
 String2=0x04,restaurant
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1859,7 +1799,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02a
 SubType=0x13
 ;GRMN_TYPE: //
-String1=0x02,Restaurant
 String2=0x04,restaurant
 ExtendedLabels=N
 DayXpm="8 13 17 1"   Colormode=16
@@ -1901,7 +1840,6 @@ DayXpm="8 13 17 1"   Colormode=16
 Type=0x02b
 SubType=0x02
 ;GRMN_TYPE: Business - Lodging/BED_AND_BREAKFAST/Bed and breakfast inn/Non NT
-String1=0x02,Hütte/Hostel
 String2=0x04,hut/hostel
 ExtendedLabels=N
 DayXpm="9 9 5 1"   Colormode=16
@@ -1927,7 +1865,6 @@ DayXpm="9 9 5 1"   Colormode=16
 Type=0x02b
 SubType=0x05
 ;GRMN_TYPE: //
-String1=0x02,Campingplatz
 String2=0x04,camping
 ExtendedLabels=N
 DayXpm="16 16 11 1"   Colormode=16
@@ -1966,7 +1903,6 @@ DayXpm="16 16 11 1"   Colormode=16
 Type=0x02b
 SubType=0x06
 ;GRMN_TYPE: //
-String1=0x02,Schutzhütte
 String2=0x04,shelter
 ExtendedLabels=N
 DayXpm="9 8 5 1"   Colormode=16
@@ -1991,7 +1927,6 @@ DayXpm="9 8 5 1"   Colormode=16
 Type=0x02b
 SubType=0x07
 ;GRMN_TYPE: //
-String1=0x02,Hütte
 String2=0x04,hut
 ExtendedLabels=N
 DayXpm="9 9 5 1"   Colormode=16
@@ -2017,7 +1952,6 @@ DayXpm="9 9 5 1"   Colormode=16
 Type=0x02c
 SubType=0x02
 ;GRMN_TYPE: Business - Attractions/MUSEUM/Museum or historical society/Non NT
-String1=0x02,Denkmal
 String2=0x04,memorial
 ExtendedLabels=N
 DayXpm="9 10 36 2"   Colormode=16
@@ -2075,7 +2009,6 @@ DayXpm="9 10 36 2"   Colormode=16
 Type=0x02c
 SubType=0x0b
 ;GRMN_TYPE: Business - Attractions/PLACE_OF_WORSHIP/Religious place of worship/Non NT
-String1=0x02,Kirche
 String2=0x04,church
 ExtendedLabels=N
 DayXpm="9 20 4 1"   Colormode=16
@@ -2111,7 +2044,6 @@ DayXpm="9 20 4 1"   Colormode=16
 Type=0x02c
 SubType=0x0d
 ;GRMN_TYPE: Business - Attractions/POW_MOSQUE/Religious place of worship/Non NT
-String1=0x02,Schloss
 String2=0x04,castle
 ExtendedLabels=N
 DayXpm="8 16 5 1"   Colormode=16
@@ -2144,7 +2076,6 @@ DayXpm="8 16 5 1"   Colormode=16
 Type=0x02d
 SubType=0x02
 ;GRMN_TYPE: Business - Entertainment/BAR/Bar or club/Non NT
-String1=0x02,Kneipe
 String2=0x04,pub
 ExtendedLabels=N
 DayXpm="13 13 11 1"   Colormode=16
@@ -2180,7 +2111,6 @@ DayXpm="13 13 11 1"   Colormode=16
 Type=0x02d
 SubType=0x09
 ;GRMN_TYPE: Business - Entertainment/SWIMMING_POOL/Swimming pool/Non NT
-String1=0x02,Badestelle
 String2=0x04,swimming
 ExtendedLabels=N
 DayXpm="11 6 5 1"   Colormode=16
@@ -2203,7 +2133,6 @@ DayXpm="11 6 5 1"   Colormode=16
 Type=0x02e
 SubType=0x02
 ;GRMN_TYPE: Business - Shopping/GROCERY_STORE/Grocery store/Non NT
-String1=0x02,Supermarkt
 String2=0x04,supermarket
 ExtendedLabels=N
 DayXpm="16 16 18 2"   Colormode=16
@@ -2249,7 +2178,6 @@ DayXpm="16 16 18 2"   Colormode=16
 Type=0x02e
 SubType=0x05
 ;GRMN_TYPE: Business - Shopping/PHARMACY/Pharmacy/Non NT
-String1=0x02,Apotheke
 String2=0x04,pharmacy
 ExtendedLabels=N
 DayXpm="11 12 38 2"   Colormode=16
@@ -2311,7 +2239,6 @@ DayXpm="11 12 38 2"   Colormode=16
 Type=0x02e
 SubType=0x06
 ;GRMN_TYPE: Business - Shopping/CONVENIENCE_STORE/Convenience store/Non NT
-String1=0x02,Kiosk
 String2=0x04,convenience
 String3=0x04,
 ExtendedLabels=N
@@ -2358,7 +2285,6 @@ DayXpm="16 16 18 2"   Colormode=16
 Type=0x02f
 SubType=0x06
 ;GRMN_TYPE: Business - Services/BANK/Bank/Non NT
-String1=0x02,Bank
 String2=0x04,bank
 ExtendedLabels=N
 DayXpm="9 11 17 1"   Colormode=16
@@ -2398,7 +2324,6 @@ DayXpm="9 11 17 1"   Colormode=16
 Type=0x02f
 SubType=0x0b
 ;GRMN_TYPE: Business - Services/PARKING/Parking/Non NT
-String1=0x02,Parkplatz
 String2=0x04,parking
 ExtendedLabels=N
 DayXpm="11 11 8 1"   Colormode=16
@@ -2429,7 +2354,6 @@ DayXpm="11 11 8 1"   Colormode=16
 Type=0x02f
 SubType=0x0c
 ;GRMN_TYPE: Business - Services/REST_AREA_TOURIST_INFO/Rest area, Tourist information/Non NT
-String1=0x02,Toilette
 String2=0x04,restroom
 ExtendedLabels=N
 DayXpm="16 16 32 2"   Colormode=16
@@ -2489,7 +2413,6 @@ DayXpm="16 16 32 2"   Colormode=16
 Type=0x02f
 SubType=0x12
 ;GRMN_TYPE: Business - Services/COMMUNICATION_SERVICES/Communication services/Non NT
-String1=0x02,Telefon
 String2=0x04,phone
 ExtendedLabels=N
 DayXpm="7 11 15 1"   Colormode=16
@@ -2527,7 +2450,6 @@ DayXpm="7 11 15 1"   Colormode=16
 Type=0x02f
 SubType=0x15
 ;GRMN_TYPE: Business - Services/UTILITY/Utility (gas, electric, water) services/Non NT
-String1=0x02,Recycling
 String2=0x04,recycling
 ExtendedLabels=N
 DayXpm="12 12 36 2"   Colormode=16
@@ -2587,7 +2509,6 @@ DayXpm="12 12 36 2"   Colormode=16
 Type=0x02f
 SubType=0x17
 ;GRMN_TYPE: Business - Services/TRANSIT_SERVICES/Mass transit services/Non NT
-String1=0x02,Bushaltestelle
 String2=0x04,bus stop
 ExtendedLabels=N
 DayXpm="9 9 11 1"   Colormode=16
@@ -2619,7 +2540,6 @@ DayXpm="9 9 11 1"   Colormode=16
 Type=0x030
 SubType=0x02
 ;GRMN_TYPE: Business - Emergency and Government/HOSPITAL/Hospital/Non NT
-String1=0x02,Arzt/Krankenhaus
 String2=0x04,doctor/hospital
 ExtendedLabels=N
 DayXpm="10 10 3 1"   Colormode=16
@@ -2645,7 +2565,6 @@ SubType=0x00
 ;GRMN_TYPE: Misc. Points of Interest/PICNIC_AREA/Picnic area/Non NT, NT
 String1=0x00,Picnic Area
 String2=0x01,Pique-nique
-String3=0x02,Picknick
 String4=0x03,Picknick plaats
 String5=0x15,Miejsce piknikowe
 String6=0x10,Piquenique
@@ -2674,7 +2593,6 @@ DayXpm="13 10 2 1"   Colormode=16
 Type=0x04c
 SubType=0x00
 ;GRMN_TYPE: Misc. Points of Interest/INFORMATION/Information/Non NT, NT
-String1=0x02,Information
 String2=0x04,information
 ExtendedLabels=N
 DayXpm="8 12 5 1"   Colormode=16
@@ -2703,7 +2621,6 @@ DayXpm="8 12 5 1"   Colormode=16
 Type=0x064
 SubType=0x11
 ;GRMN_TYPE: Geographical Named Points of Interest/TOWER/Tower/Non NT, NT
-String1=0x02,Turm
 String2=0x04,tower
 ExtendedLabels=N
 DayXpm="9 18 14 1"   Colormode=16
@@ -2747,7 +2664,6 @@ DayXpm="9 18 14 1"   Colormode=16
 Type=0x064
 SubType=0x12
 ;GRMN_TYPE: Geographical Named Points of Interest/TRAIL/Trailhead/Non NT, NT
-String1=0x02,Wasserturm
 String2=0x04,water tower
 ExtendedLabels=N
 DayXpm="9 18 15 1"   Colormode=16
@@ -2792,7 +2708,6 @@ DayXpm="9 18 15 1"   Colormode=16
 Type=0x064
 SubType=0x13
 ;GRMN_TYPE: Geographical Named Points of Interest/TUNNEL/Tunnel/Non NT, NT
-String1=0x02,Windkraftanlage
 String2=0x04,wind turbine
 ExtendedLabels=N
 DayXpm="15 26 44 2"   Colormode=16
@@ -2874,7 +2789,6 @@ DayXpm="15 26 44 2"   Colormode=16
 Type=0x064
 SubType=0x14
 ;GRMN_TYPE: Geographical Named Points of Interest/WELL/Well/Non NT, NT
-String1=0x02,Trinkwasser
 String2=0x04,drinking water
 ExtendedLabels=N
 DayXpm="13 14 16 1"   Colormode=16
@@ -2916,7 +2830,6 @@ DayXpm="13 14 16 1"   Colormode=16
 Type=0x064
 SubType=0x15
 ;GRMN_TYPE: Geographical Named Points of Interest/HISTORICAL_TOWN/Historical (ghost) town/Non NT, NT
-String1=0x02,Mühle
 String2=0x04,mill
 ExtendedLabels=N
 DayXpm="11 11 25 2"   Colormode=16
@@ -2964,7 +2877,6 @@ DayXpm="11 11 25 2"   Colormode=16
 Type=0x064
 SubType=0x16
 ;GRMN_TYPE: Geographical Named Points of Interest/SUBDIVISION/Non NT, NT/
-String1=0x02,Laubbaum
 String2=0x04,broadleaf tree
 ExtendedLabels=N
 DayXpm="9 12 13 1"   Colormode=16
@@ -3001,7 +2913,6 @@ DayXpm="9 12 13 1"   Colormode=16
 Type=0x064
 SubType=0x17
 ;GRMN_TYPE: //
-String1=0x02,Nadelbaum
 String2=0x04,pinale
 ExtendedLabels=N
 DayXpm="7 12 6 1"   Colormode=16
@@ -3031,7 +2942,6 @@ DayXpm="7 12 6 1"   Colormode=16
 Type=0x066
 SubType=0x0f
 ;GRMN_TYPE: Geographical Named Points of Interest - Land Related/PILLAR/Pillar/Non NT, NT
-String1=0x02,Pfosten/Barriere
 String2=0x04,barrier
 ExtendedLabels=N
 DayXpm="7 7 3 1"   Colormode=16
@@ -3053,7 +2963,6 @@ DayXpm="7 7 3 1"   Colormode=16
 Type=0x066
 SubType=0x19
 ;GRMN_TYPE: //
-String1=0x02,Höhle
 String2=0x04,cave
 ExtendedLabels=N
 DayXpm="8 8 24 2"   Colormode=16
@@ -3097,7 +3006,6 @@ DayXpm="8 8 24 2"   Colormode=16
 Type=0x067
 SubType=0x00
 ;GRMN_TYPE: //
-String1=0x02,Funkturm/Funkmast
 String2=0x04,communications tower
 ExtendedLabels=N
 DayXpm="11 20 16 1"   Colormode=16
@@ -3145,7 +3053,6 @@ DayXpm="11 20 16 1"   Colormode=16
 Type=0x067
 SubType=0x01
 ;GRMN_TYPE: //
-String1=0x02,Aussichtsturm
 String2=0x04,observation tower
 ExtendedLabels=N
 DayXpm="19 20 34 2"   Colormode=16
@@ -3211,7 +3118,6 @@ DayXpm="19 20 34 2"   Colormode=16
 Type=0x067
 SubType=0x02
 ;GRMN_TYPE: //
-String1=0x02,Funkmast
 String2=0x04,communication mast
 ExtendedLabels=N
 DayXpm="11 12 8 1"   Colormode=16
