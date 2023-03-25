@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y wget unzip \
 
 
 #FROM openjdk:11-jre-slim
-FROM amazoncorretto:18
+FROM amazoncorretto:19
 COPY --from=builder /build/mkgmap /mkgmap
 COPY --from=builder /build/splitter /splitter
 COPY --from=builder /build/osmosis /osmosis
