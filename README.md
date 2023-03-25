@@ -19,4 +19,4 @@ WEB RESOURCES:
 
 - [gpx studio](https://gpx.studio/)
 - <https://www.cferrero.net/maps/guide_to_mkgmap_style_files.html>
-- https://github.com/ligfietser/mkgmap-style-sheets
+- <https://github.com/ligfietser/mkgmap-style-sheets>

@@ -4,7 +4,11 @@
 #directory: PL.gmap -> move to you Basecamp map folder (on mac: Garmin Mac Manager, copy to that folder)
 #PL.img -> move to your device
 
+file_url=https://download.geofabrik.de/europe/
 file_name=poland-latest.osm.pbf
+
+#file_url=https://download.geofabrik.de/europe/poland/
+#file_name=dolnoslaskie-latest.osm.pbf
 days_old=14 #how old can be file before we will re-download it
 
 DOWNLOAD=
@@ -29,7 +33,7 @@ fi
 
 if [[ ! -z $DOWNLOAD ]]; then
 	[[ -e ${file_name} ]] && rm -rf ./*pbf
-	curl -LO https://download.geofabrik.de/europe/poland-latest.osm.pbf
+	curl -LO ${file_url}/${file_name}
 fi
 
 docker run -it --rm -v $(pwd):/data \
