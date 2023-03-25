@@ -7,8 +7,8 @@ set -x
 
 #docker run -v $(pwd):/data
 GARMIN_DIR=/data/garmin
-#DEM_FILES=${GARMIN_DIR}/dem/dem1/,${GARMIN_DIR}/dem/dem3/
-DEM_FILES=${GARMIN_DIR}/dem/dem3/
+DEM_FILES=${GARMIN_DIR}/dem/dem1/,${GARMIN_DIR}/dem/dem3/
+#DEM_FILES=${GARMIN_DIR}/dem/dem3/
 SEA_FILES=${GARMIN_DIR}/sea
 
 
@@ -19,7 +19,9 @@ SEA_FILES=${GARMIN_DIR}/sea
 [ -z "$PRODUCT_VERSION" ] && PRODUCT_VERSION=2209
 
 #--mapname=name
-#Set the name of the map. Garmin maps are identified by an 8 digit number. The default is 63240001. It is best to use a different name if you are going to be making a map for others to use so that it is unique and does not clash with others.
+#Set the name of the map. Garmin maps are identified by an 8 digit number.
+# The default is 63240001. It is best to use a different name if you are going
+# to be making a map for others to use so that it is unique and does not clash with others.
 [ -z "$MAP_NAME" ] && MAP_NAME=63240901
 
 #style & typ
