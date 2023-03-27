@@ -14,8 +14,8 @@ SEA_FILES=${GARMIN_DIR}/sea
 
 # -z tests if string length is zero
 [ -z "$MAX_HEAP_SIZE" ] && MAX_HEAP_SIZE="10G"
-[ -z "$DESCRIPTION" ] && DESCRIPTION="ludwiczek maps"
 [ -z "$FAMILY_NAME" ] && FAMILY_NAME="ludwiczek_maps"
+[ -z "$DESCRIPTION" ] && DESCRIPTION="ludwiczek maps"
 [ -z "$PRODUCT_VERSION" ] && PRODUCT_VERSION=2209
 
 #--mapname=name
@@ -62,6 +62,7 @@ java -Xmx${MAX_HEAP_SIZE} -jar /splitter/splitter.jar --output-dir=/work /data/*
     ${TYP_DIR}/${TYP_FILE}
 
 if [ $? -eq 0 ]; then
+    echo "Looks fine:) Moving files"
     mv gmapsupp.img /data/${FAMILY_NAME}.img
     mv ${FAMILY_NAME}.gmap /data/
 fi

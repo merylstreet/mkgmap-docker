@@ -2937,6 +2937,21 @@ DayXpm="7 12 6 1"   Colormode=16
 ;1234567
 [end]
 
+[_point]
+Type=0x065
+SubType=0x0f
+;GRMN_TYPE: Geographical Named Points of Interest - Water Related/RESERVOIR/Reservoir/Non NT, NT
+String1=0x00,Water Reservoir
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=Day
+DaycustomColor:#4D80B3
+ContourColor=No
+DayXpm="1 1 1 1"   Colormode=16
+"!	c #7BCAFF"
+"!"
+;1
+[end]
 
 [_point]
 Type=0x066

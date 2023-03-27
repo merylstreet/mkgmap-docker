@@ -1,7 +1,7 @@
 #!/bin/bash
 set +x
 
-#http://viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm
+#http://viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org1.htm
 
 URL=http://viewfinderpanoramas.org/dem1/
 
