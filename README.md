@@ -2,6 +2,7 @@ USAGE:
 
 - build docker image by running ```cd docker``` & ```./build.sh```
 - download additional file by running ```cd garmin``` & ```./update.sh```
+- allow executing with ```chmod +x create_paca.sh```
 - run ```create_paca.sh``` (or create another one)
 
 CONFIG:
