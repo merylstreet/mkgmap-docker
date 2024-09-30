@@ -1,8 +1,12 @@
+USAGE:
 
 - build docker image by running ```./build.sh```
-- read the ```garmin.sh``` - it is the main workhorse
+- ```cd garmin``` and ```./update.sh```
+- run ```create_paca.sh``` (or create another one)
+
+CONFIG:
+- read the ```garmin.sh``` - it is the main workhorse.
 - download OSM PBF data from <https://download.geofabrik.de/index.html>. You can download more than one *.pbf file - it will be complied into one output file
-- *edit* and run `create_map.sh`
 
 TODO:
 
