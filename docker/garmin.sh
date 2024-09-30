@@ -63,8 +63,8 @@ java -Xmx${MAX_HEAP_SIZE} -jar /splitter/splitter.jar --output-dir=/work /data/*
 
 if [ $? -eq 0 ]; then
     echo "Looks fine:) Moving files"
-    mv gmapsupp.img /data/${FAMILY_NAME}.img
     mv ${FAMILY_NAME}.gmap /data/
+    mv gmapsupp.img /data/${FAMILY_NAME}.gmap/
 fi
 
 cd /
