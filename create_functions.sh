@@ -41,3 +41,9 @@ docker_run() {
 		-e TYP=${TYP} \
 		ludw/mkgmap
 }
+
+change_ownership() {
+    local user=$(id -u)
+    local group=$(id -g)
+    sudo chown -R $user:$group .
+}
