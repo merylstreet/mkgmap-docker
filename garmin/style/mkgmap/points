@@ -143,7 +143,7 @@ amenity=convention_center [0x2c09 resolution 24]
 #amenity=community_centre [0x3005 resolution 24]
 #amenity=community_center [0x3005 resolution 24]
 amenity=courthouse [0x3004 resolution 24]
-amenity=drinking_water [0x5000 resolution 24 default_name 'Water']
+amenity=drinking_water [0x2a07 resolution 8 default_name 'Water']
 amenity=embassy & country=* {set name='${country} ${name|def:Embassy}'} [0x3003 resolution 24]
 amenity=embassy & country!=* [0x3003 resolution 24 default_name 'Embassy']
 amenity=emergency_phone [0x2f12 resolution 24 default_name 'Emergency Phone']
@@ -330,8 +330,8 @@ tourism=* & tourism!=no & tmp:stopMopUp!=yes [0x2c0d resolution 24]
 # amenity=restaurant/fast_food/cafe/pub and shop=* can use cuisine, so have cuisine section later than where the others
 # should take precedence
 # Have the following 2 lines here rather than after cuisine=... so that, for amenity=fast_food, cuisine is ignored
-amenity=fast_food & cuisine=* {add name='${cuisine|subst:"_=> "}'} [0x2a07 resolution 24]
-amenity=fast_food [0x2a07 resolution 24]
+amenity=fast_food & cuisine=* {add name='${cuisine|subst:"_=> "}'} [0x2a00 resolution 24]
+amenity=fast_food [0x2a00 resolution 24]
 
 # "Food & Drink" Search has categories as follows, corresponding to 0x2a00 - 0x2a13:
 #   All, American, Asian, Barbeque, Chinese, Deli/Bakery, International, Fast Food, Italian, Mexican, Pizza,
@@ -351,7 +351,7 @@ cuisine=deli | cuisine=sandwich
 cuisine=international
     [0x2a06 resolution 24]
 cuisine=fast_food
-    [0x2a07 resolution 24]
+    [0x2a00 resolution 24]
 cuisine=italian | cuisine=pasta
     [0x2a08 resolution 24]
 cuisine=mexican | cuisine=spanish | cuisine=tapas
