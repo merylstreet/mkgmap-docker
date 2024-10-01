@@ -1329,7 +1329,7 @@ DayXpm="8 13 17 1"   Colormode=16
 
 [_point]
 Type=0x02a
-SubType=0x07
+SubType=0x00
 ;GRMN_TYPE: Business - Food and Drink/RESTAURANT_FAST_FOOD/Fast food establishment, i.e. McDonalds/Non NT
 String2=0x04,fast food
 ExtendedLabels=N
@@ -2786,9 +2786,9 @@ DayXpm="15 26 44 2"   Colormode=16
 
 
 [_point]
-Type=0x064
-SubType=0x14
-;GRMN_TYPE: Geographical Named Points of Interest/WELL/Well/Non NT, NT
+Type=0x02a
+SubType=0x07
+;GRMN_TYPE: Food and Drink/WATER/Water/Non NT, NT
 String2=0x04,drinking water
 ExtendedLabels=N
 DayXpm="13 14 16 1"   Colormode=16
